@@ -7,13 +7,13 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="top-[104px] z-0 relative px-4 py-20 mx-auto w-full items-center justify-between text-center bg-gradient-to-b from-[#3D2319] to-black text-white min-h-screen"
+      className="top-[104px] z-0 relative px-4 py-20 w-full items-center justify-between text-center bg-black  text-white min-h-screen"
     >
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className=" mb-16 flex justify-between"
+        className=" mb-16 flex justify-between w-full"
       >
         {/* side left image */}
         <div className="relative w-1/5 md:1/4 left-9 -bottom-12 md:-bottom-64 rotate-[-15deg] opacity-50 z-0">
@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
         </div>
         {/* main image */}
-        <div className="bg-black w-64 md:w-1/3 z-10 rounded-lg  mb-8 inline-block">
+        <div className="bg-black border-2 border-dashed border-yellow-500 w-64 md:w-1/3 z-10 rounded-lg  mb-8 inline-block">
           <img
             src="/images/aakash-g.png"
             alt="D2C Summit Logo Large"
@@ -41,7 +41,7 @@ export default function Hero() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
-        className="text-2xl md:text-6xl font-bold mb-12 z-20"
+        className="text-2xl md:text-6xl font-bold mb-12 z-20 italic font-mono hover:not-italic"
       >
         India's Premier D2C &<br />
         Modern Retail Conclave
@@ -53,11 +53,11 @@ export default function Hero() {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="flex items-center justify-center gap-4 text-sm z-0"
       >
-        <span className="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-full flex items-center gap-2">
+        <span className="bg-yellow-500/30 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-2">
           <ShoppingBagIcon className="h-4 w-4" />
           ANNOUNCING SOON
         </span>
-        <span className="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-full flex items-center gap-2">
+        <span className="bg-yellow-500/30 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-2">
           <CalendarIcon className="h-4 w-4" />
           SEPTEMBER 2025
         </span>

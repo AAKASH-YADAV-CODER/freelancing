@@ -12,7 +12,7 @@ const Navbar = () => {
         duration: 0.4,
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
       }}
-      className="bg-[#3D2319] w-full z-50 fixed top-0 left-0  mx-auto px-4 py-6 flex items-center justify-between"
+      className="bg-black w-full z-50 fixed top-0 left-0  mx-auto px-4 py-6 flex items-center justify-between"
     >
       <div className="flex items-center gap-8 z-50">
         <Link to={"/"} className="flex items-center gap-2">
@@ -43,7 +43,7 @@ const Navbar = () => {
         <Link href="#faqs" className="hover:text-orange-400">FAQs</Link> */}
       </div>
 
-      <button className="bg-[#6D28D9] hover:bg-[#5B21B6] text-white rounded-xl p-4 z-50">
+      <button className="bg-gradient-to-r font-mono font-semibold from-yellow-400 via-yellow-200 to-yellow-600 text-black rounded-xl p-4 z-50">
         JOIN THE WAITLIST
         <span className="ml-2">→</span>
       </button>

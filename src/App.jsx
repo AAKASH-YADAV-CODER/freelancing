@@ -5,12 +5,12 @@ import About from "./components/about.jsx";
 import Corporates from "./components/corporates.jsx";
 function App() {
   return (
-    <>
+    <div className="w-full">
       <Navbar />
       <Hero />
       <About />
       <Corporates />
-    </>
+    </div>
   );
 }
 

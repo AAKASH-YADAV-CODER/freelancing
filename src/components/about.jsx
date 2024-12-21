@@ -32,11 +32,11 @@ const About = () => {
       <div className="md:w-1/2 m-4">
         <div className=" text-l md:text-2xl flex items-center gap-2 my-4">
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 0.5 }}>
-            <FaPlay className="text-orange-500" />
+            <FaPlay className="text-yellow-500" />
           </motion.div>
           About Me
         </div>
-        <h1 className="text-2xl md:text-5xl my-3">
+        <h1 className="text-2xl md:text-5xl my-3 font-mono">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           <br />
         </h1>
@@ -108,7 +108,7 @@ const About = () => {
         <div className="my-4">
           <button
             onClick={toggleReadMore}
-            className=" text-orange-500 hover:text-orange-700 my-2 font-bold mb-20"
+            className=" text-yellow-500 hover:text-yellow-600 my-2 font-bold mb-20"
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>

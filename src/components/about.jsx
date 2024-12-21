@@ -8,7 +8,7 @@ const About = () => {
     setExpanded(!isExpanded);
   };
   return (
-    <div className="md:flex relative top-32 w-full">
+    <div className="md:flex relative top-32 w-full mb-6">
       <div className="m-7">
         <div className="h-20 w-20 relative top-14 left-6">
           <motion.div
@@ -27,7 +27,7 @@ const About = () => {
             className="h-10 w-10 relative -top-14 left-6 "
           />
         </div>
-        <img src="/images/dummy.png" alt="img" />
+        <img src="/images/dummy.png" alt="img" className="mb-16" />
       </div>
       <div className="md:w-1/2 m-4">
         <div className=" text-l md:text-2xl flex items-center gap-2 my-4">
@@ -105,7 +105,7 @@ const About = () => {
             suscipit. Quod similique impedit consequatur error, dicta assumenda.
           </>
         )}
-        <div className="my-4">
+        <div className="mb-32">
           <button
             onClick={toggleReadMore}
             className=" text-yellow-500 hover:text-yellow-600 my-2 font-bold mb-20"

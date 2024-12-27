@@ -73,7 +73,10 @@ const EventHighlight = () => {
       <h1 className="text-center text-4xl font-bold mb-10 z-10 relative">
         Event Highlights
       </h1>
-      <div className="overflow-x-hidden h-96">
+      <h2 className="text-center text-2xl font-bold mb-10 z-10 relative">
+        Why This Event Stands Out
+      </h2>
+      <div className="overflow-x-hidden h-[500px]">
         <motion.div
           className="flex space-x-6 relative z-10  "
           animate={{
@@ -88,13 +91,15 @@ const EventHighlight = () => {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className="transform transition-transform hover:scale-110 flex-shrink-0 w-80 h-96  bg-gray-800 rounded-lg shadow-lg p-6 text-center relative z-10"
+              className="m-5 transform text-black bg-opacity-10 transition-transform hover:scale-110 flex-shrink-0 w-80 h-96  bg-gradient-to-br from-[#FFD700] to-[#B8860B] rounded-lg shadow-lg p-6 text-center relative z-10"
             >
-              <div className="text-4xl mb-4 text-blue-400 place-items-center">
+              <div className="text-5xl m-4 place-items-center">
                 {highlight.icon}
               </div>
-              <h2 className="text-xl font-semibold mb-2">{highlight.title}</h2>
-              <p className="text-gray-400 text-sm">{highlight.description}</p>
+              <h2 className="text-3xl font-semibold my-10">
+                {highlight.title}
+              </h2>
+              <p className=" text-sm mt-5">{highlight.description}</p>
             </div>
           ))}
         </motion.div>

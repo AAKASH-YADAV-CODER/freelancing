@@ -94,7 +94,7 @@ const IndustriesCover = () => {
               <div className="text-4xl mb-4">{industry.icon}</div>
               <h2 className="text-xl font-semibold">{industry.name}</h2>
             </div>
-            <div className="absolute inset-0 bg-gray-900 rounded-lg bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center p-4">
+            <div className="absolute inset-0 bg-gray-900 rounded-lg  text-white opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center p-4">
               <p className="text-center mb-4">{industry.description}</p>
               <ul className="text-sm">
                 {industry.companies.map((company, i) => (

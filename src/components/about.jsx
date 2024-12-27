@@ -1,15 +1,11 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa";
-import { useState } from "react";
+
 import { motion } from "framer-motion";
 const About = () => {
-  const [isExpanded, setExpanded] = useState(false);
-  const toggleReadMore = () => {
-    setExpanded(!isExpanded);
-  };
   return (
-    <div className="md:flex relative top-32 w-full mb-6">
-      <div className="m-7">
+    <div className="md:flex min-h-screen top-32 w-full mb-6">
+      <div className="mt-20">
         <div className="h-20 w-20 relative top-14 left-6">
           <motion.div
             animate={{ rotate: 360 }}
@@ -29,18 +25,37 @@ const About = () => {
         </div>
         <img src="/images/dummy.png" alt="img" className="mb-16" />
       </div>
-      <div className="md:w-1/2 m-4">
-        <div className=" text-l md:text-2xl flex items-center gap-2 my-4">
+
+      <div className="md:w-1/2 m-4 h-1/2 md:mt-28">
+        <div className=" text-l md:text-2xl flex items-center gap-2 my-4 font-mono">
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 0.5 }}>
             <FaPlay className="text-yellow-500" />
           </motion.div>
-          About Me
+          About the Event
         </div>
-        <h1 className="text-2xl md:text-5xl my-3 font-mono">
+
+        <div className="div pb-10">
+          EPIIC’s Virtual Pan-India Job Fair 2025 bridges the gap between
+          ambitious young graduates and India’s top companies. This elite event
+          offers unparalleled opportunities for graduates to secure their dream
+          jobs and connect with some of India’s most prominent corporates.
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
+/**
+ * const [isExpanded, setExpanded] = useState(false);
+  const toggleReadMore = () => {
+    setExpanded(!isExpanded);
+  };
+ * <h1 className="text-2xl md:text-5xl my-3 font-mono">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           <br />
         </h1>
-        {isExpanded ? (
+ {isExpanded ? (
           <>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro unde
             tempora inventore cum quaerat laborum quae natus excepturi
@@ -113,9 +128,4 @@ const About = () => {
             {isExpanded ? "Read Less" : "Read More"}
           </button>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default About;
+ */

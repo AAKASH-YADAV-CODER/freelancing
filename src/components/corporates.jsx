@@ -120,7 +120,7 @@ const Corporates = () => {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-600 text-black font-medium rounded-xl p-3 mt-24"
+        className="bg-gradient-to-r from-[#FFD700] via-[#FFECB3] to-[#B8860B] text-black font-medium rounded-xl p-3 mt-24"
       >
         BECOME A SPONSOR
         <span className="ml-2">→</span>

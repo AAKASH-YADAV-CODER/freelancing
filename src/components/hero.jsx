@@ -1,4 +1,4 @@
-import { CalendarIcon, ShoppingBagIcon } from "lucide-react";
+// import { CalendarIcon, ShoppingBagIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -7,7 +7,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="top-[104px] z-0 relative px-4 py-20 w-full items-center justify-between text-center bg-black  text-white min-h-screen"
+      className="top-[100px] z-0 relative px-4 py-20 w-full items-center justify-between text-center bg-black  text-white min-h-screen"
     >
       <motion.div
         initial={{ y: 50, opacity: 0 }}
@@ -38,29 +38,35 @@ export default function Hero() {
       </motion.div>
 
       <motion.h1
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="text-2xl md:text-6xl font-bold mb-12 z-20 italic font-mono hover:not-italic"
+        initial={{ y: 50, opacity: 0 }} // Starts off slightly below the view and fully transparent
+        animate={{ y: 0, opacity: 1 }} // Moves into position and becomes fully visible
+        transition={{
+          delay: 0.4, // Delays the animation by 0.4 seconds
+          duration: 0.8, // Animation lasts 0.8 seconds
+          ease: "easeOut", // Makes the animation ease out for smoothness
+        }}
+        className="text-4xl md:text-5xl font-bold m-3 z-50 font-mono"
       >
-        India's Premier D2C &<br />
-        Modern Retail Conclave
+        EPIIC Horizons 2025:
+        <br /> India’s Premier Virtual Job Fair
       </motion.h1>
-
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-        className="flex items-center justify-center gap-4 text-sm z-0"
+      <motion.h2
+        initial={{ y: 50, opacity: 0 }} // Starts off slightly below the view and fully transparent
+        animate={{ y: 0, opacity: 1 }} // Moves into position and becomes fully visible
+        transition={{
+          delay: 0.4, // Delays the animation by 0.4 seconds
+          duration: 0.8, // Animation lasts 0.8 seconds
+          ease: "easeOut", // Makes the animation ease out for smoothness
+        }}
+        className="italic text-2xl md:text-3xl font-serif m-3"
       >
-        <span className="bg-yellow-500/30 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-2">
-          <ShoppingBagIcon className="h-4 w-4" />
-          ANNOUNCING SOON
-        </span>
-        <span className="bg-yellow-500/30 text-yellow-400 px-4 py-2 rounded-full flex items-center gap-2">
-          <CalendarIcon className="h-4 w-4" />
-          SEPTEMBER 2025
-        </span>
+        Empowering Talent. Connecting Futures
+      </motion.h2>
+      <motion.div className="place-items-center space-y-5 text-sm z-0">
+        <button className="bg-yellow-500/30 hover:bg-[#FFD700] hover:shadow-yellow-500 hover:shadow-2xl hover:text-black text-yellow-400 px-4 py-2 mt-12 rounded-full flex  gap-2">
+          REGISTER NOW
+        </button>
+        <div className="text-lg">(Free Registration for Participants)</div>
       </motion.div>
     </motion.div>
   );

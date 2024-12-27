@@ -2,8 +2,8 @@ import React from "react";
 import { FaPlay } from "react-icons/fa";
 const AssociativeCard = () => {
   return (
-    <div className="bg-black mt-5  place-items-center pb-24">
-      <div className="flex justify-center items-center  my-9 pt-10 p-2 gap-3 text-white">
+    <div className="bg-black place-items-center pb-24">
+      <div className="flex justify-center items-center pt-10 p-2 gap-3 text-white">
         <FaPlay className="text-yellow-500" />
         The ASSOCIATIVES 2024
       </div>

@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { slideIn } from "../utils/motion.jsx";
-import EarthCanvas from "./canvas/Earth.jsx";
 const stats = [
   {
     icon: "🏢", // Replace with a building icon
@@ -60,13 +58,6 @@ const EventStats = () => {
             </motion.div>
           ))}
         </div>
-      </motion.div>
-      {/* //Earth */}
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-[600px] md:h-[550px] h-[350px] w-full"
-      >
-        <EarthCanvas />
       </motion.div>
     </section>
   );
